@@ -1,0 +1,50 @@
+// =========================| Form elements |========================= //
+
+
+
+//====================> 1. Buttons
+
+.btn {
+  @include border-radius(0);
+  @include user-select(none);
+
+  display: inline-block;
+  height: 32px;
+  padding: 4px 18px;
+  margin-bottom: 0; // For input.btn
+  color: $reg-col-white;
+  text-align: center;
+  text-decoration: none !important;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: $role-link-col-normal;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+
+  &:hover  {
+    background-color: $role-link-col-hover;
+  }
+
+  &:active {
+    background-color: $role-link-col-active;
+  }
+}
+
+
+
+//====================> 2. Text inputs
+
+.textfield {
+  height: 32px;
+  padding: 4px;
+}
+
+
+
+//====================> 3. Checkboxes
+
+
+
+
+//====================> 4. Radio buttons

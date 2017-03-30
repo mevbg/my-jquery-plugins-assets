@@ -1,0 +1,54 @@
+// =========================| Utility classes |========================= //
+
+
+
+//====================> 1. Clearfix
+
+.cf {
+  @include cf();
+}
+
+.wrp-main {
+  max-width: 1280px;
+}
+
+
+
+//====================> 2. Wrappers
+
+.wrp {
+  margin-right: auto;
+  margin-left:  auto;
+}
+
+.wrp-main {
+  max-width: 1440px;
+}
+
+
+
+//====================> 3. Paddings
+
+.pad {
+  //
+}
+
+.pad-main {
+  padding: 0 6.25%;
+}
+
+@media screen and (max-width: 999px) {
+
+  .wrp-main {
+    max-width: 700px;
+  }
+
+}
+
+@media screen and (max-width: 599px) {
+
+  .pad-main {
+    padding: 0 3%;
+  }
+
+}

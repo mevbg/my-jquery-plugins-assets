@@ -1,0 +1,63 @@
+// =========================| Scaffolding |========================= //
+
+
+
+//====================> 1. Box-sizing
+
+*,
+*::before,
+*::after {
+  @include box-sizing(border-box);
+}
+
+
+
+//====================> 2. Document reset
+
+html {
+  font-size: 10px;
+
+  -webkit-tap-highlight-color: rgba($role-base-typo-color, 0);
+}
+
+body {
+  margin: 0;
+  font-family: $role-base-typo-family;
+  font-size: $role-base-typo-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: $role-base-typo-line-height;
+  color: $role-base-typo-color;
+  background: $role-base-bgr;
+}
+
+
+
+//====================> 3. Document dimensions
+
+html,
+body {
+  min-width: $role-screen-size-min;
+}
+
+
+
+//====================> 4. Hyperlinks
+
+a {
+  color: $role-link-col-normal;
+  text-decoration: underline;
+
+  &:active {
+    color: $role-link-col-active !important;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html:not(.mobile) a:hover {
+  color: $role-link-col-hover;
+  text-decoration: none;
+}

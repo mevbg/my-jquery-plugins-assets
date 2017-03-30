@@ -1,0 +1,73 @@
+// =========================| Registries |========================= //
+
+
+
+//--------------------------| Base typography
+
+$role-base-typo-family:      $reg-font-family-sans-serif;
+$role-base-typo-size:        $reg-font-size-normal;
+$role-base-typo-line-height: $reg-line-height-base;
+$role-base-typo-color:       $reg-col-gray;
+$role-base-bgr:              $reg-col-white;
+
+
+//--------------------------| Meta texts
+
+$role-meta-text-size: $reg-font-size-small;
+$role-meta-text-col:  $reg-col-gray-light;
+
+
+//--------------------------| Titles
+
+$role-ttl-line-height: $reg-line-height-tight;
+$role-ttl-text-col:    $reg-col-gray-dark;
+
+$role-ttl-page-size: $reg-font-size-huge; // 48px
+
+$role-ttl-section-size: ceil(($reg-font-size-base * 1.65)); // 33px
+
+$role-ttl-subsection-size: $reg-font-size-base * 1.2;  // 24px
+
+$role-ttl-argument-size:        $reg-font-size-normal;
+$role-ttl-argument-font-family: $reg-font-family-monotype;
+
+
+//--------------------------| Notes
+
+$role-note-bgr:              $reg-col-yellow;
+$role-note-text-col:         $reg-col-gray-dark;
+
+
+//--------------------------| Borders
+
+$role-border-col-light: $reg-col-gray-lighter;
+
+
+//--------------------------| Links
+
+$role-link-col-normal: $reg-col-blue;
+$role-link-col-hover:  $reg-col-green;
+$role-link-col-active: $reg-col-red;
+
+
+//--------------------------| Object sizes
+
+$role-size-height-gradient: 60px;
+
+$role-size-height-header: 60px;
+$role-size-height-footer: 60px;
+
+$role-size-image: 600px;
+
+$pa-profile-size: 32px;
+
+
+//--------------------------| Offsets
+
+$role-ofs-heading: 3.5714285714%;
+
+
+//--------------------------| Screen size limits
+
+$role-screen-size-min: 320px;
+

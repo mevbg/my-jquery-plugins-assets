@@ -1,0 +1,124 @@
+// =========================| Footer |========================= //
+
+
+
+.page-footer {
+
+//====================> 1. Base
+
+  @include filter-gradient($reg-col-gray-lighter, $reg-col-white, vertical); // IE6-9
+  @include background-image(linear-gradient(top, rgba($reg-col-gray-lighter, 1) 0%, rgba($reg-col-white, 1) 100%));
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  min-width: $role-screen-size-min;
+  cursor: default;
+
+  .wrp-main {
+    position: relative;
+    height: 100%;
+  }
+
+  .links {
+    padding-top: 50px;
+    font-size: $role-base-typo-size;
+    text-align: center;
+
+    a {
+      position: relative;
+      display: inline-block;
+      padding-left: 42px;
+      margin: 0 10px;
+
+      &::before {
+        $size: 32px;
+
+        @include box-shadow(1px 1px 0 #999);
+
+        position: absolute;
+        top: -4px;
+        left: 0;
+        display: block;
+        width: $size;
+        height: $size;
+        background-color: $reg-col-white;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: auto $size;
+        border: 1px solid $reg-col-white;
+        content: '';
+      }
+    }
+
+    .me::before {
+      background-image: url('http://s.gravatar.com/avatar/0240c310cb30ce7e37a9b7c4c169a716?s=64'); // sass-lint:disable-line no-url-protocols no-url-domains
+    }
+  }
+
+  .license {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    font-size: $role-meta-text-size;
+    color: $reg-col-gray-light;
+    text-align: center;
+  }
+
+
+
+//====================> 2. Screen cases
+
+  @media screen and (max-width: 999px) {
+
+    & {
+      height: 130px;
+
+      .links {
+        padding-top: 32px;
+        font-size: $role-base-typo-size - 2;
+
+        a {
+          padding-left: 34px;
+
+          &::before {
+            $size: 24px;
+
+            top: -2px;
+            width: $size;
+            height: $size;
+            background-size: auto $size;
+          }
+        }
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 599px) {
+
+    & {
+      height: 100px;
+
+      .links {
+        padding-top: 20px;
+        font-size: $role-base-typo-size - 3;
+      }
+
+      .license {
+        position: static;
+        width: 250px;
+        padding-top: 20px;
+        margin: 0 auto;
+        font-size: $role-meta-text-size - 2;
+        text-align: center;
+      }
+    }
+
+  }
+
+
+} // .page-footer

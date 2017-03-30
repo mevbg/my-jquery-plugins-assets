@@ -1,0 +1,105 @@
+// =========================| Header |========================= //
+
+
+
+.page-header {
+
+//====================> 1. Base
+
+  @include filter-gradient($reg-col-white, $reg-col-gray-lighter, vertical); // IE6-9
+  @include background-image(linear-gradient(top, rgba($reg-col-white, 1) 0%, rgba($reg-col-gray-lighter, 1) 100%));
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  min-width: $role-screen-size-min;
+  cursor: default;
+
+  .wrp-main {
+    height: 100%;
+  }
+
+  .ttl {
+    padding-top: 40px;
+    white-space: nowrap;
+  }
+
+  .description {
+    margin-top: 10px;
+    font-size: $role-base-typo-size; // 16px
+    color: $role-base-typo-color;
+  }
+
+  @at-root {
+    .ribbon {
+      $size: 149px;
+
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      display: block;
+      width: $size;
+      height: $size;
+      background: url(data-uri('src/images/ribbon.png')) no-repeat right top;
+      background-size: 100% auto;
+    }
+  }
+
+
+
+//====================> 2. Screen cases
+
+  @media screen and (max-width: 999px) {
+
+    & {
+      height: 130px;
+
+      .ttl {
+        padding-top: 32px;
+      }
+
+      .description {
+        margin-top: 6px;
+        font-size: $role-base-typo-size - 2; // 14px
+      }
+    }
+
+    .ribbon {
+      $size: 120px;
+
+      width: $size;
+      height: $size;
+    }
+
+  }
+
+  @media screen and (max-width: 599px) {
+
+    & {
+      height: 100px;
+
+      .ttl {
+        padding: 14px 60px 0 0;
+        white-space: normal;
+      }
+
+      .description {
+        margin-top: 0;
+        font-size: $role-base-typo-size - 3; // 13px
+      }
+    }
+
+    .ribbon {
+      $size: 99px;
+
+      width: $size;
+      height: $size;
+    }
+
+  }
+
+
+} // .page-header

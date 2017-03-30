@@ -1,0 +1,117 @@
+// =========================| Typography |========================= //
+
+
+
+//====================> 1. Headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $role-ttl-line-height;
+  color: $role-ttl-text-col;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: $role-ttl-page-size;
+}
+
+h2 {
+  padding: 5px $role-ofs-heading;
+  margin: 0 #{-$role-ofs-heading} 10px;
+
+  font-size: $role-ttl-section-size;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 30px 0 12px;
+  font-size: $role-ttl-subsection-size; // 24px
+}
+
+h4 {
+  margin: 30px 0 12px;
+  font-family: $role-ttl-argument-font-family;
+  font-size: $role-ttl-argument-size; // 16px
+}
+
+@media screen and (max-width: 999px) {
+
+  h1 {
+    font-size: $role-ttl-page-size - 16; // 32px
+  }
+
+  h2 {
+    padding: 5px 1.78571429%;
+    margin:  0 -1.78571429% 10px;
+    font-size: $role-ttl-section-size - 7; // 26px;
+  }
+
+  h3 {
+    margin-top: 26px;
+    font-size: $role-ttl-subsection-size - 4; // 20px
+  }
+
+  h4 {
+    margin-top: 26px;
+    font-size: $role-ttl-argument-size - 2; // 14px
+  }
+
+}
+
+@media screen and (max-width: 599px) {
+
+  h1 {
+    font-size: $role-ttl-page-size - 24; // 24px
+  }
+
+  h2 {
+    font-size: $role-ttl-section-size  -13; // 20px;
+  }
+
+  h3 {
+    font-size: $role-ttl-subsection-size - 6; // 18px
+  }
+
+  h4 {
+    font-size: $role-ttl-argument-size - 4; // 12px
+  }
+
+}
+
+
+
+//====================> 2. Paragraphs
+
+p {
+  margin: 0 0 10px;
+
+  em {
+    display: block;
+    padding: 5px 10px;
+    color: $role-note-text-col;
+    background-color: $role-note-bgr;
+    border: 1px dotted $role-border-col-light;
+  }
+}
+
+
+
+//====================> 3. Codes
+
+pre {
+  margin: 12px 0 20px !important;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 599px) {
+
+  pre {
+    font-size: 11px;
+  }
+
+}

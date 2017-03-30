@@ -1,0 +1,114 @@
+// =========================| Section |========================= //
+
+
+
+.page-section {
+
+//====================> 1. Base
+
+  @include box-shadow(0 0 10px -2px $reg-col-gray-lighter);
+
+  position: relative;
+  z-index: 1;
+  margin: 170px auto;
+  background-color: $reg-col-white;
+
+  .pad-main {
+    $offset: 50px;
+
+    padding-top:    $offset;
+    padding-bottom: $offset;
+  }
+
+  .col {
+    width: 48%;
+    padding: 0 1.7857142857%;
+    font-size: $role-base-typo-size;
+  }
+
+  .col-description,
+  .col-docs {
+    float: left;
+  }
+
+  .col-demo {
+    float: right;
+  }
+
+  .col-demo {
+    ul,
+    ol,
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+  }
+
+  .col-docs {
+    clear: left;
+  }
+
+  h2:not(:first-of-type),
+  .col-docs {
+    margin-top: 50px;
+  }
+
+
+
+//====================> 2. Screen cases
+
+  @media screen and (max-width: 999px) {
+
+    & {
+      margin: 130px auto;
+    }
+
+    .col {
+      float: none;
+      width: 100%;
+      font-size: $role-base-typo-size - 2; // 14px
+    }
+
+    .pad-main {
+      $offset: 40px;
+
+      padding-top:    $offset;
+      padding-bottom: $offset;
+    }
+
+    h2:not(:first-of-type),
+    .col-docs,
+    .col-demo {
+      margin-top: 40px;
+    }
+
+  }
+
+  @media screen and (max-width: 599px) {
+
+    & {
+      margin: 100px auto;
+    }
+
+    .col {
+      font-size: $role-base-typo-size - 3;
+    } // 14px
+
+    .pad-main {
+      $offset: 30px;
+
+      padding-top:    $offset;
+      padding-bottom: $offset;
+    }
+
+    h2:not(:first-of-type),
+    .col-docs,
+    .col-demo {
+      margin-top: 30px;
+    }
+
+  }
+
+
+} // .page-section

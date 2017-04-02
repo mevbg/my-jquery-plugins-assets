@@ -28,6 +28,7 @@
   "-W065": true,
   "predef": [
     "jQuery",
-    "FastClick"
+    "showdown",
+    "Prism"
   ]
 }

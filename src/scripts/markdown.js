@@ -4,7 +4,9 @@
 
 //--------------------------| DOM Ready
 
-jQuery(document).ready(function() {
+jQuery(document).ready(function($) {
+
+  'use strict';
 
   $.ajax({
     url: 'README.md',
@@ -17,6 +19,7 @@ jQuery(document).ready(function() {
       var dom = $.extend({}, {
         title: htmlText.find('h1'),
         slogan: htmlText.find('h1').next('p'),
+        pills: htmlText.find('h1').next('p').next('p'),
         description: (function() {
           var descriptionTitle = htmlText.find('#description'),
             descriptionText  = htmlText.find('#description').next('p'),
@@ -34,6 +37,9 @@ jQuery(document).ready(function() {
         }()),
         content: htmlText
       });
+
+      // Remove pills
+      dom.pills.remove();
 
       // Remove #demo
       htmlText.find('#demo').next('p').remove();

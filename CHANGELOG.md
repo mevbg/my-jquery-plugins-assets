@@ -1,3 +1,13 @@
+<a name="1.1.1"></a>
+## 1.1.1 (2017-04-02)
+
+
+### Bug Fixes
+
+* **Readme pills:** Removed pills from Home page ([fab0ec3](https://github.com/martinmethod/my-jquery-plugins-assets/commit/fab0ec3))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2017-04-02)
 

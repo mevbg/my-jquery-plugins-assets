@@ -40,7 +40,7 @@ module.exports = {
   },
 
   demo: {
-    src: 'https://avatars0.githubusercontent.com/u/70142?v=3&s=460',
+    src: 'src/images/favicon.png',
     dest: 'dist/favicons'
   }
 };

@@ -1,3 +1,13 @@
+<a name="1.1.2"></a>
+## 1.1.2 (2017-04-03)
+
+
+### Bug Fixes
+
+* **Buttons:** Restored white text color on :hover ([ac320e0](https://github.com/martinmethod/my-jquery-plugins-assets/commit/ac320e0))
+
+
+
 <a name="1.1.1"></a>
 ## 1.1.1 (2017-04-02)
 

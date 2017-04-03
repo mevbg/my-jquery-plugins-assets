@@ -36,6 +36,7 @@ textarea {
   border: 1px solid transparent;
 
   &:hover  {
+    color: $reg-col-white !important;
     background-color: $role-link-col-hover;
   }
 

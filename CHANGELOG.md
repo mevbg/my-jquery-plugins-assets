@@ -1,3 +1,14 @@
+<a name="1.2.0"></a>
+# 1.2.0 (2017-04-08)
+
+
+### Features
+
+* **Deploy:** GitHub Pages & GitHub Releases ([1ecd8b0](https://github.com/martinmethod/my-jquery-plugins-assets/commit/1ecd8b0))
+* **System:** Removed .gitignore ([1c80400](https://github.com/martinmethod/my-jquery-plugins-assets/commit/1c80400))
+
+
+
 <a name="1.1.2"></a>
 ## 1.1.2 (2017-04-03)
 

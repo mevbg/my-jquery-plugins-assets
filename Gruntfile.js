@@ -15,9 +15,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', function() {
     grunt.task.run(['concurrent:build']);
-
-    if (env === 'prod') {
-      grunt.file.write('dist/CNAME', 'assets.martinmetodiev.com');
-    }
   });
 };

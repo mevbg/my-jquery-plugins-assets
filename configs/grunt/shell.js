@@ -14,16 +14,29 @@ module.exports = {
     command: 'git checkout -b release dev'
   },
 
-  release: {
+  changelog: {
     command: [
-      'git add . && git commit -m "Bump version to <%= pkg.version %>"',
-      'git checkout -b prod origin/prod && git checkout -b staging prod',
-      'git merge release',
       'touch CHANGELOG.md',
       'grunt conventionalChangelog',
-      'git add CHANGELOG.md && git commit -m "CHANGELOG"',
+      'git add CHANGELOG.md',
+      'git commit -m "CHANGELOG"'
+    ].join('&&')
+  },
+
+  prod: {
+    command: [
       'git checkout prod',
-      'git merge --no-ff staging -m "Release v<%= pkg.version %>"',
+      'git merge --no-ff staging -m "Release v<%= pkg.version %>"'
+    ].join('&&')
+  },
+
+  release: {
+    command: [
+      'git add . && git commit -m "v<%= pkg.version %>"',
+      'git checkout -b prod origin/prod && git checkout -b staging prod',
+      'git merge --no-ff release -m \'Merge branch "release" into "staging"\'',
+      'grunt shell:changelog',
+      'grunt shell:prod',
       'grunt bump-commit',
       'git checkout dev',
       'git merge --no-ff release -m \'Merge branch "release" into "dev"\'',

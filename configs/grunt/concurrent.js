@@ -8,7 +8,10 @@ module.exports = {
     ['stripCssComments', 'sass'],
 
     // scripts
-    ['concat', 'uglify']
+    ['concat', 'uglify'],
+
+    // cover
+    ['copy:cover']
   ],
 
   review: [

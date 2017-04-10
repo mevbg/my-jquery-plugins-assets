@@ -4,6 +4,11 @@ module.exports = {
     event: ['changed', 'added', 'deleted']
   },
 
+  markup: {
+    files: ['src/markup/**/*.pug'],
+    tasks: ['puglint']
+  },
+
   styles: {
     files: ['src/styles/**/*.scss'],
     tasks: ['sasslint', 'clean:styles', 'stripCssComments', 'sass']

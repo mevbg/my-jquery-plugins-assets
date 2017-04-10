@@ -1,3 +1,13 @@
+<a name="1.3.0"></a>
+# 1.3.0 (2017-04-10)
+
+
+### Features
+
+* **Markup:** Common Pug templates ([8702cb8](https://github.com/martinmethod/my-jquery-plugins-assets/commit/8702cb8))
+
+
+
 <a name="1.2.0"></a>
 # 1.2.0 (2017-04-08)
 

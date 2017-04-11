@@ -1,3 +1,13 @@
+<a name="1.6.0"></a>
+# 1.6.0 (2017-04-11)
+
+
+### Features
+
+* **config.json:** New name: common.json ([4fb1688](https://github.com/martinmethod/my-jquery-plugins-assets/commit/4fb1688))
+
+
+
 <a name="1.5.2"></a>
 ## 1.5.2 (2017-04-11)
 

@@ -1,3 +1,13 @@
+<a name="1.5.2"></a>
+## 1.5.2 (2017-04-11)
+
+
+### Bug Fixes
+
+* **IE8 check:** Broken link (githubUsername) ([ac3ff62](https://github.com/martinmethod/my-jquery-plugins-assets/commit/ac3ff62))
+
+
+
 <a name="1.5.1"></a>
 ## 1.5.1 (2017-04-11)
 

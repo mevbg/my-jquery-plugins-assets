@@ -1,3 +1,13 @@
+<a name="1.5.0"></a>
+# 1.5.0 (2017-04-11)
+
+
+### Features
+
+* **Banner:** Common text configuration ([a4ac9f8](https://github.com/martinmethod/my-jquery-plugins-assets/commit/a4ac9f8))
+
+
+
 <a name="1.4.0"></a>
 # 1.4.0 (2017-04-11)
 

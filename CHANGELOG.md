@@ -1,3 +1,13 @@
+<a name="1.4.0"></a>
+# 1.4.0 (2017-04-11)
+
+
+### Features
+
+* **Distribution:** Distribution included in production ([6bb712c](https://github.com/martinmethod/my-jquery-plugins-assets/commit/6bb712c))
+
+
+
 <a name="1.3.0"></a>
 # 1.3.0 (2017-04-10)
 

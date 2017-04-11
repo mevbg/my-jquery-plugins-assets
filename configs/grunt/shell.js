@@ -30,19 +30,30 @@ module.exports = {
     ].join('&&')
   },
 
+  dist: {
+    command: [
+      'grunt clean:all',
+      'grunt build --target=prod',
+      'git add "dist" -f',
+      'git commit -m "Distribution"'
+    ].join('&&')
+  },
+
   release: {
     command: [
       'git add . && git commit -m "v<%= pkg.version %>"',
       'git checkout -b prod origin/prod && git checkout -b staging prod',
       'git merge --no-ff release -m \'Merge branch "release" into "staging"\'',
       'grunt shell:changelog',
+      'grunt shell:dist',
       'grunt shell:prod',
       'grunt bump-commit',
       'git checkout dev',
       'git merge --no-ff release -m \'Merge branch "release" into "dev"\'',
       'git push',
       'git branch -D release && git branch -D staging && git branch -D prod',
-      'grunt concurrent:review'
+      'grunt concurrent:review',
+      'grunt build'
     ].join('&&')
   }
 };

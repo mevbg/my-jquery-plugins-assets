@@ -1,3 +1,13 @@
+<a name="1.5.1"></a>
+## 1.5.1 (2017-04-11)
+
+
+### Bug Fixes
+
+* **Ribbon:** Broken link (githubUsername) ([b4f3ac9](https://github.com/martinmethod/my-jquery-plugins-assets/commit/b4f3ac9))
+
+
+
 <a name="1.5.0"></a>
 # 1.5.0 (2017-04-11)
 

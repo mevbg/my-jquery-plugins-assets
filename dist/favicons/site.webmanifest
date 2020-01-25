@@ -1,5 +1,6 @@
 {
     "name": "My jQuery plugins assets",
+    "short_name": "My jQuery plugins assets",
     "icons": [
         {
             "src": "/android-chrome-36x36.png",

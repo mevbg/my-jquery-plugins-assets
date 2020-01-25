@@ -53,5 +53,8 @@
   "scripts": {
     "start": "npm install && grunt clean:all && grunt dev"
   },
-  "sasslintConfig": "configs/linters/.sass-lint.yml"
+  "sasslintConfig": "configs/linters/.sass-lint.yml",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
 }

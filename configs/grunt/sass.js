@@ -9,6 +9,7 @@ var grunt = require('grunt'),
 module.exports = {
 
   options: {
+    implementation: sass,
     importer: nodeSassGlobbing,
     sourceMap: grunt.option('target') !== 'prod',
     outputStyle: 'compressed',

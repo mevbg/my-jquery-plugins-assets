@@ -6,7 +6,7 @@ script:
 - npm install
 - grunt build --target='prod'
 - printf '.gitignore\ndeployed*' > dist/.gitignore
-- printf 'assets.martinmetodiev.com' > dist/CNAME
+- printf 'assets.metodiev.dev' > dist/CNAME
 - cp 'README.md' dist
 branches:
   only:

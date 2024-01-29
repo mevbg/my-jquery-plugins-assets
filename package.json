@@ -14,6 +14,9 @@
     "email": "metodiev.martin@gmail.com",
     "url": "https://metodiev.dev"
   },
+  "engines": {
+    "node": "10.x"
+  },
   "devDependencies": {
     "compass-mixins": "^0.12.10",
     "css-browser-selector": "^0.6.5",
@@ -51,7 +54,8 @@
     "assets"
   ],
   "scripts": {
-    "start": "npm install && grunt clean:all && grunt dev"
+    "start": "npm install && grunt clean:all && grunt dev",
+    "build": "grunt build"
   },
   "sasslintConfig": "configs/linters/.sass-lint.yml",
   "dependencies": {

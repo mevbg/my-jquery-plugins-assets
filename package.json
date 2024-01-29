@@ -54,7 +54,8 @@
     "assets"
   ],
   "scripts": {
-    "start": "npm install && grunt clean:all && grunt dev"
+    "start": "npm install && grunt clean:all && grunt dev",
+    "build": "grunt build"
   },
   "sasslintConfig": "configs/linters/.sass-lint.yml",
   "dependencies": {

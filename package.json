@@ -2,7 +2,7 @@
   "name": "my-jquery-plugins-assets",
   "title": "My jQuery plugins assets",
   "description": "Common assets (styles, scripts etc.) for all my jQuery plugins' demo pages",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
